@@ -1,15 +1,25 @@
-body{
+/*body{
     text-align: center;
-    /*background: white;*/
+    margin: 0px;
+    padding: 0px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-front-smoothing: antialiased;
+    -moz-front-smoothing: antialiased;
+    -moz-osx-front-smoothing: antialiased;
 }
 
 #header{
-    /*border: 1px solid black;*/
     height: 120px;
     width: 100%;
     background: blanchedalmond;
     border-bottom: 5px solid #ccc;
     border-top: 5px solid #61daf6;
+}
+
+.center{
+    width: 75%;
+    margin: 0px auto;
 }
 
 #logo{
@@ -21,4 +31,21 @@ body{
 #logo img{
     display: block;
     float: left;
+    height: 60px;
+    animation: girar infinite 20s linear;
 }
+
+@keyframes girar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#brand{
+    display: block;
+    margin: 0px;
+    float: left;
+}*/
