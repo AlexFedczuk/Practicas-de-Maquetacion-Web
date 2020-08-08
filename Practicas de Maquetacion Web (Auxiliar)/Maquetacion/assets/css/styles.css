@@ -1,0 +1,24 @@
+body{
+    text-align: center;
+    /*background: white;*/
+}
+
+#header{
+    /*border: 1px solid black;*/
+    height: 120px;
+    width: 100%;
+    background: blanchedalmond;
+    border-bottom: 5px solid #ccc;
+    border-top: 5px solid #61daf6;
+}
+
+#logo{
+    width: 30%;
+    font-size: 30px;
+    float: left;
+}
+
+#logo img{
+    display: block;
+    float: left;
+}
