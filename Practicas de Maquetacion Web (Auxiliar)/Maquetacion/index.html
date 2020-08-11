@@ -12,9 +12,11 @@
             window.addEventListener("load", function(){
                 var template = document.getElementById("article-template");
                 
-                for(var i = 1; i <= 5; i++){
+                
+                for(var i = 1; i <= 5; i++) {
                     var clonado = template.cloneNode(true);
-                    var h2 = clonado.getElementByTagName("h2")[0];
+                    clonado.removeAttribute("id");
+                    var h2 = clonado.getElementsByTagName("h2")[0];
                     h2.innerHTML = h2.textContent + " " + i;
                     articles.appendChild(clonado);
                 }
@@ -57,10 +59,10 @@
 
         <div class="center">
             <section id="content">
-                <h2>Ultimos articulos</h2>
+                <h2 class="subheader">Ultimos articulos</h2>
                 <!--Listado de los articulos-->
-                <div id="aticles">
-                    <article class="articule-item" id="article-template">
+                <div id="articles">
+                    <article class="article-item" id="article-template">
                         <div class="image-wrap">
                             <img 
                                 src="https://c.pxhere.com/images/6e/9d/870e1dd0862927f53a408380f132-1593914.jpg!d" 
@@ -72,11 +74,12 @@
                             Hace 5 minutos 
                         </span>
                         <a href="#">Leer mas</a>
+                        <div class='clearfix'></div>
                     </article>
                     <!--Aniadir articulos via JavaScript-->
                 </div>
             </section>
-
+            
             <aside id="sidebar">
                 <div id="nav-blog" class="sidebar-item">
                     <h3>Podes hacer esto</h3>
@@ -91,7 +94,7 @@
                     </form>
                 </div>
             </aside>
-            <div class="clearfix"></div>
+            <div class='clearfix'></div>
         </div>
 
         <footer id="footer">
